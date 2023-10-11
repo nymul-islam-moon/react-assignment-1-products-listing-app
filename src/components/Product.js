@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const Product = () => {
+const Product = ({ product }) => {
   return (
       <article className="product">
-      <img src="" alt="" />
+      <img src={product.image} alt="" />
       <div className="product__details">
         <h4 className="product__title">product title</h4>
         <p>Price: $ product price</p>
